@@ -4,20 +4,16 @@ import { useState } from "react";
 // Input function
 const Input = (props) => {
   const [userInput, setUserInput] = useState("");
-  function handleSubmit(e) {
+  //   console.log(userInput);
+  function handleChange(e) {
     e.preventDefault();
-    if (userInput.length) {
-      console.log(userInput);
-      userInput.trim();
-      setUserInput("");
-    }
   }
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
-        <input type="text" value={userInput} />
-      </form>
-    </div>
+    <form>
+      <textarea onChange={handleChange} />
+
+      {/* <input type="text" value={userInput} onChange={handleChange} /> */}
+    </form>
   );
 };
 

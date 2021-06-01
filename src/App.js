@@ -9,12 +9,14 @@ import Input from "./components/Input";
 
 // App function
 function App() {
-  // const [char, setChar] = useState("");
-
+  function handleSubmit(e) {
+    e.preventDefault();
+  }
   return (
     <div className="App">
       <Header />
       <Input />
+      <textarea onChange={handleSubmit} />
     </div>
   );
 }
