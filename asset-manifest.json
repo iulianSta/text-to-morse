@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.js": "/text-to-morse/static/js/main.067216fb.chunk.js",
+    "main.js.map": "/text-to-morse/static/js/main.067216fb.chunk.js.map",
+    "runtime-main.js": "/text-to-morse/static/js/runtime-main.103cfb14.js",
+    "runtime-main.js.map": "/text-to-morse/static/js/runtime-main.103cfb14.js.map",
+    "static/js/2.e4c60bec.chunk.js": "/text-to-morse/static/js/2.e4c60bec.chunk.js",
+    "static/js/2.e4c60bec.chunk.js.map": "/text-to-morse/static/js/2.e4c60bec.chunk.js.map",
+    "index.html": "/text-to-morse/index.html",
+    "static/js/2.e4c60bec.chunk.js.LICENSE.txt": "/text-to-morse/static/js/2.e4c60bec.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.103cfb14.js",
+    "static/js/2.e4c60bec.chunk.js",
+    "static/js/main.067216fb.chunk.js"
+  ]
+}
