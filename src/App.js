@@ -7,16 +7,16 @@ import Header from "./components/Header";
 // import Input
 import Input from "./components/Input";
 
+//import Output
+import Output from "./components/Output";
+
 // App function
 function App() {
-  function handleSubmit(e) {
-    e.preventDefault();
-  }
   return (
     <div className="App">
       <Header />
       <Input />
-      <textarea onChange={handleSubmit} />
+      {/* <Output /> */}
     </div>
   );
 }
