@@ -6,17 +6,18 @@ const Input = (props) => {
   const [userInput, setUserInput] = useState("");
   function handleSubmit(e) {
     e.preventDefault();
-    // if (userInput.length) {
-    //   props.setChar((prevState) => [...prevState, { text: userInput.trim() }]);
-    //   setUserInput("");
-    //}
+    if (userInput.length) {
+      console.log(userInput);
+      userInput.trim();
+      setUserInput("");
+    }
   }
   return (
-    <form onSubmit={handleSubmit}>
-      <label>
+    <div>
+      <form onSubmit={handleSubmit}>
         <input type="text" value={userInput} />
-      </label>
-    </form>
+      </form>
+    </div>
   );
 };
 
