@@ -1,3 +1,6 @@
+// Import useState from "react"
+import { useState } from "react";
+
 // Import Header
 import Header from "./components/Header";
 
