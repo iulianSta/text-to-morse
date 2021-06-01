@@ -9,10 +9,12 @@ import Input from "./components/Input";
 
 // App function
 function App() {
+  const [char, setChar] = useState("");
+
   return (
     <div className="App">
       <Header />
-      <Input userInput={userInput} />
+      <Input />
     </div>
   );
 }
