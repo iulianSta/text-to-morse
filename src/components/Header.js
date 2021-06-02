@@ -3,7 +3,7 @@
 const Header = () => {
   return (
     <div>
-      <h1>Please type your text to translate it in Morse code</h1>
+      <h1>Text to Morse Code converter </h1>
     </div>
   );
 };
