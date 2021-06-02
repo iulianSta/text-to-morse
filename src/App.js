@@ -21,7 +21,7 @@ function App() {
     <div className="App">
       <Header />
       <Input userInput={userInput} />
-      {/* <Output /> */}
+      <Output />
     </div>
   );
 }
