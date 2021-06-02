@@ -2,7 +2,7 @@ import code from "../data";
 
 // Output function
 
-const Output = (value) => {
+const Output = ({ value, code }) => {
   const translateText = (value) => {
     let morseCode = "";
 
