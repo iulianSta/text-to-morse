@@ -1,19 +1,15 @@
+import code from "../data";
+
 // Output function
 
-const Output = ({ userInput, Data }) => {
-  const translateText = (userInput) => {
-    console.log(userInput.value);
-    const code = {
-      a: ".-",
-      b: "-...",
-      c: "-.-.",
-      d: "-..",
-    };
+const Output = (value) => {
+  const translateText = (value) => {
+    let morseCode = "";
 
-    for (let i = 0; i < userInput.length; i++) {
-      let morseCode = "";
-      morseCode += code[userInput[i].toLowerCase()];
+    for (let i = 0; i < value.length; i++) {
+      morseCode += code[value[i].toLowerCase()];
     }
+    return morseCode;
   };
 
   return (

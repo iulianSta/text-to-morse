@@ -10,13 +10,13 @@ import Input from "./components/Input";
 //Import Output
 import Output from "./components/Output";
 
-// Import data.json
-import Data from "./data.json";
+// Import data.js
+import code from "./data";
 
 // App function
 function App() {
   const [userInput, setUserInput] = useState("");
-  const [info, setInfo] = useState(Data);
+  const [code, setCode] = useState({});
   return (
     <div className="App">
       <Header />
