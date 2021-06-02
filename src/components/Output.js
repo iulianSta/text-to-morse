@@ -1,20 +1,16 @@
+import { useState } from "react";
 import code from "../data";
 
 // Output function
 
-const Output = ({ value, code }) => {
-  const translateText = (value) => {
-    let morseCode = "";
-
-    for (let i = 0; i < value.length; i++) {
-      morseCode += code[value[i].toLowerCase()];
-    }
-    return morseCode;
-  };
-
+const Output = ({ codedText }) => {
   return (
     <form>
-      <textarea type="text" onKeyUp={translateText} />
+      <textarea type="text" value={codedText} />
+      {/* <p>{codedText}</p>
+      <button type="button" onClick={translateText}>
+        OK
+      </button> */}
     </form>
   );
 };

@@ -1,14 +1,11 @@
 // Import useState from "react"
-import { useState } from "react";
+import React from "react";
 
 // Input function
-const Input = ({ userInput }) => {
-  function handleChange(e) {
-    e.preventDefault();
-  }
+const Input = ({ handleInput, translateText }) => {
   return (
     <form>
-      <textarea type="text" onChange={handleChange} />
+      <textarea type="text" onChange={handleInput} onKeyUp={translateText} />
     </form>
   );
 };

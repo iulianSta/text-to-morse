@@ -16,12 +16,31 @@ import code from "./data";
 // App function
 function App() {
   const [userInput, setUserInput] = useState("");
-  const [code, setCode] = useState({});
+  const [codedText, setCodedText] = useState("");
+
+  const handleUserInput = (e) => {
+    const { value } = e.target;
+    setUserInput(value);
+  };
+
+  let morseCode = "";
+
+  const translateText = () => {
+    for (let letter of userInput) {
+      morseCode += code[letter.toLowerCase()];
+    }
+    setCodedText(morseCode);
+  };
+
   return (
     <div className="App">
       <Header />
-      <Input userInput={userInput} />
-      <Output />
+      <Input
+        userInput={userInput}
+        handleInput={handleUserInput}
+        translateText={translateText}
+      />
+      <Output codedText={codedText} />
     </div>
   );
 }
