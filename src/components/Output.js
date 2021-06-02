@@ -1,16 +1,21 @@
 // Output function
 
 const Output = ({ userInput, Data }) => {
-  const translateText = (inputText) => {
-    const code = Data.map((obj) => {
-      const { char, code } = obj;
-      console.log(obj);
-      let morseCode = "";
-      for (let i = 0; i < inputText.length; i++) {
-        if (inputText === char) morseCode += code[inputText[i].toLowerCase()];
-      }
-    });
+  const translateText = (userInput) => {
+    console.log(userInput.value);
+    const code = {
+      a: ".-",
+      b: "-...",
+      c: "-.-.",
+      d: "-..",
+    };
+    let morseCode = "";
+    for (let i = 0; i < userInput.length; i++) {
+      console.log(userInput.length);
+      morseCode += code[userInput[i].toLowerCase()];
+    }
   };
+
   return (
     <form>
       <textarea type="text" onKeyUp={translateText} />

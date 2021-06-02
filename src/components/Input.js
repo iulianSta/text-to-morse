@@ -1,8 +1,8 @@
 // Import useState from "react"
-// import { useState } from "react";
+import { useState } from "react";
 
 // Input function
-const Input = (props) => {
+const Input = ({ userInput }) => {
   function handleChange(e) {
     e.preventDefault();
   }
