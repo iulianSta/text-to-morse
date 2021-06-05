@@ -13,7 +13,9 @@ h1 {
 form {
   margin: 1em;
   @include flex;
+
   textarea {
     border-radius: 5px;
+    color: $blue;
   }
 }
