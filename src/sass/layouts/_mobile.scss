@@ -2,6 +2,7 @@
 
 h1 {
   margin-top: 3em;
+  margin-bottom: 3em;
   font-family: $app-font;
   color: $red;
   text-align: center;
@@ -10,7 +11,9 @@ h1 {
 //Form setup
 
 form {
-  position: relative;
-  top: 3rem;
-  left: 54rem;
+  margin: 1em;
+  @include flex;
+  textarea {
+    border-radius: 5px;
+  }
 }
