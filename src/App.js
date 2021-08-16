@@ -21,10 +21,10 @@ function App() {
   const [userInput, setUserInput] = useState("");
   const [codedText, setCodedText] = useState("");
 
-  const handleUserInput = (e) => {
+  function handleInput(e) {
     const { value } = e.target;
     setUserInput(value);
-  };
+  }
 
   let morseCode = "";
 
@@ -40,10 +40,10 @@ function App() {
       <Header />
       <Input
         userInput={userInput}
-        handleInput={handleUserInput}
+        handleInput={handleInput}
         translateText={translateText}
       />
-      <Output codedText={codedText} />
+      <Output codedText={codedText} translateText={translateText} />
     </div>
   );
 }

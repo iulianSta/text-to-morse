@@ -4,7 +4,7 @@ import React from "react";
 // Input function
 const Input = ({ handleInput, translateText }) => {
   return (
-    <form>
+    <form onChange={handleInput}>
       <textarea type="text" onChange={handleInput} onKeyUp={translateText} />
     </form>
   );
