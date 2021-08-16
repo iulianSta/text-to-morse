@@ -1,4 +1,17 @@
-# Getting Started with Create React App
+# Text converter App
+
+![Text converter](./src/images/img/pass-gen.png)
+
+## Table of Contents
+
+### About The Project
+
+**Text to morse converter**
+
+This application was build to practice React and Sass and to show the power onChange of React.
+Is an instant text to morse code converter.
+
+### Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -68,3 +81,25 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### Usage
+
+- React;
+- Sass;
+- JavaScript;
+
+### Contributing
+
+## Iulian Stan
+
+### License
+
+- Copyright protected
+
+### Contact
+
+[**Iulian Stan**](https://github.com/iulianSta)
+
+### Acknowledgement
+
+### I want to thank to the [**DCI**](https://www.digitalcareerinstitute.org) team and teachers!
